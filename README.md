@@ -1,5 +1,7 @@
 # WALLPAPER_ABYSS_Downloader
 
+A python web scraper for downloading wallpapers from alphacoders.com
+
 Dependencies:
   1. Python3
   2. requests
