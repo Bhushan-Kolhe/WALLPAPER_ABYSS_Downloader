@@ -9,7 +9,8 @@ def download_image(url):
     source = r.get(url).text
     soup = BeautifulSoup(source,'lxml')
     #print(soup.prettify())
-    a = soup.find('img',class_='img-responsive')
+    a = soup.find('img',class_='main-content')
+    print(a)
     span = soup.find('span', class_='btn btn-success btn-custom download-button').attrs
     img = span['data-id'] + '.' + span['data-type']
 
